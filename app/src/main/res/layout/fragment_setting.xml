@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_topbar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tobbar_bg"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/setting_appname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_profile_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_topbar_ll">
+
+        <ImageView
+            android:id="@+id/setting_sticker_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/st5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/setting_name_cl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/setting_id_tv"
+            app:layout_constraintLeft_toRightOf="@id/setting_sticker_iv"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/setting_name_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/home_bg"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="name" />
+
+            <TextView
+                android:id="@+id/setting_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/setting_profile_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/setting_name_et"
+                app:layout_constraintLeft_toLeftOf="@id/setting_name_et"
+                app:layout_constraintTop_toTopOf="@id/setting_name_et"
+                tools:text="name" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/setting_a_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0040"
+            android:textColor="@color/setting_profile_text"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@id/setting_name_cl"
+            app:layout_constraintLeft_toLeftOf="@id/setting_name_cl" />
+
+        <TextView
+            android:id="@+id/setting_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/setting_profile_text"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@id/setting_a_tv"
+            app:layout_constraintTop_toTopOf="@id/setting_a_tv"
+            tools:text="id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/setting_edit_bt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_setting_edit_bt"
+        android:text="프로필 수정"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/setting_logout_bt"
+        app:layout_constraintTop_toBottomOf="@id/setting_profile_ll" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setting_logout_bt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_setting_logout_bt"
+        android:text="로그아웃"
+        android:textColor="#FFACB3"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/setting_edit_bt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/setting_edit_bt" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_sticker_cl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_setting_sticker_cl"
+        app:layout_constraintBottom_toBottomOf="@id/setting_logout_bt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/setting_profile_ll">
+
+        <ImageView
+            android:id="@+id/setting_sticker_st0_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/st0"
+            app:layout_constraintBottom_toTopOf="@id/setting_sticker_st3_iv"
+            app:layout_constraintEnd_toStartOf="@id/setting_sticker_st1_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/setting_sticker_st1_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/st1"
+            app:layout_constraintBottom_toTopOf="@id/setting_sticker_st4_iv"
+            app:layout_constraintEnd_toStartOf="@id/setting_sticker_st2_iv"
+            app:layout_constraintStart_toEndOf="@id/setting_sticker_st0_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/setting_sticker_st2_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/st2"
+            app:layout_constraintBottom_toTopOf="@id/setting_sticker_st5_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/setting_sticker_st1_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/setting_sticker_st3_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/st3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/setting_sticker_st4_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/setting_sticker_st0_iv" />
+
+        <ImageView
+            android:id="@+id/setting_sticker_st4_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/st4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/setting_sticker_st5_iv"
+            app:layout_constraintStart_toEndOf="@id/setting_sticker_st3_iv"
+            app:layout_constraintTop_toBottomOf="@id/setting_sticker_st1_iv" />
+
+        <ImageView
+            android:id="@+id/setting_sticker_st5_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/st5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/setting_sticker_st4_iv"
+            app:layout_constraintTop_toBottomOf="@id/setting_sticker_st2_iv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

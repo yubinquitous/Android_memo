@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">60초면 충분한 스토리</string>
+    <string name="network_error"><strong>네트워크 연결 끊김</strong>\n연결 상태 확인 후 다시 이용해 주세요🙏</string>
+    <string name="dialog_base_check">확인</string>
+    <string name="dialog_base_cancel">취소</string>
+
+    <string name="signin_login">로그인</string>
+    <string name="signin_signin">회원가입</string>
+    <string name="signin_signup_info">아직 계정이 없으신가요?</string>
+
+    <string name="signup_id">아이디</string>
+    <string name="signup_pw">비밀번호</string>
+    <string name="signup_pw_check">비밀번호 재확인</string>
+    <string name="signup_nickname">이름</string>
+    <string name="signup_signup">가입하기</string>
+    <string name="signup_pwcheck_error">비밀번호가 일치하지 않습니다.</string>
+    <string name="pwcheck_null"> </string>
+
+    <string name="home_filter_1">최신순</string>
+    <string name="home_filter_2">스티커별</string>
+    <string name="home_filter_3">오래된 순</string>
+
+    <string name="memo_write_appname">60초면 충분한 스토리</string>
+
+    <string name="memo_view_delete">삭제</string>
+
+
+
+</resources>

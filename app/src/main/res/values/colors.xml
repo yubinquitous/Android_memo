@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- base dialog -->
+    <color name="dialog_base_bg">#fff</color>
+    <color name="dialog_base_title">#000</color>
+    <color name="dialog_base_button_text">#FFA5AC</color>
+<!--    <color name="dialog_base_button_text">#FADA7B</color>-->
+    <color name="dialog_base_border">#f1f1f1</color>
+
+    <color name="app">#FFA5AC</color>
+    <color name="tobbar_bg">#FFACB3</color>
+
+    <!-- sign in -->
+    <color name="signin_login_box">#6E6E6E</color>
+    <color name="signin_login_hintText">#333333</color>
+    <color name="signin_login_bt">#FFA5AC</color>
+    <color name="signin_signup_text">#090909</color>
+    <color name="signin_signup_info_text">#131313</color>
+    <color name="signin_bg">#F4F4F4</color>
+
+    <!-- sign up -->
+    <color name="signup_bg">#EFEFEF</color>
+    <color name="signup_tv">#090909</color>
+    <color name="signup_login_bt">#FFACB3</color>
+
+    <!-- main -->
+    <color name="main_tab_line">#131313</color>
+    <!-- home -->
+    <color name="home_bg">#E5E5E5</color>
+    <color name="home_topbar_layout">#FFACB3</color>
+    <color name="home_appname_text">#272727</color>
+    <color name="home_filter_button">#FFA5AC</color>
+    <color name="home_filter_bg">#CCFFFFFF</color>
+    <color name="home_filter_text">#131313</color>
+    <color name="home_filter_line">#292929</color>
+    <color name="home_filter_text_selected">#FFA5AC</color>
+
+    <!--    <color name="home_filter_button2">#FFABB1</color> -->
+
+    <!-- memo -->
+    <color name="memo_sticker_bg">#CCFFFFFF</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_100">#F5F5F5</color>
+
+    <!-- memo_write -->
+    <color name="memo_write_topbar_bg">#FFA5AC</color>
+    <color name="memo_write_appname">#131313</color>
+
+    <color name="setting_bg">#FFA5AC</color>
+
+    <color name="item_memo_text">#131313</color>
+
+    <color name="setting_profile_text">#131313</color>
+    <color name="setting_logout_stroke">#FF9AA1</color>
+
+</resources>
