@@ -23,8 +23,8 @@
         <activity android:name=".main.MainActivity">
 
         </activity>
-        <activity android:name=".memowrite.MemoWriteActivity"/>
-        <activity android:name=".memoview.MemoViewActivity"/>
+        <activity android:name=".memowrite.MemoWriteActivity" />
+        <activity android:name=".memoview.MemoViewActivity" />
 
     </application>
 

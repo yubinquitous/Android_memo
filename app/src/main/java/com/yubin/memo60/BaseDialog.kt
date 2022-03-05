@@ -8,11 +8,11 @@ import android.widget.TextView
 
 class BaseDialog(context: Context) {
     private val dialog = Dialog(context)
-    private lateinit var tvTitle : TextView
-    private lateinit var btnOK : TextView
-    private lateinit var btnCancel : Button
-    var listener : BaseDialogClickListener? = null
-    fun show(title : String) {
+    private lateinit var tvTitle: TextView
+    private lateinit var btnOK: TextView
+    private lateinit var btnCancel: Button
+    var listener: BaseDialogClickListener? = null
+    fun show(title: String) {
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.dialog_base)
@@ -30,6 +30,7 @@ class BaseDialog(context: Context) {
 //        }
         dialog.show()
     }
+
     interface BaseDialogClickListener {
         fun onOKClicked()
     }

@@ -38,25 +38,27 @@ class SignInActivity : BaseActivity() {
         }
     }
 
-    private fun signIn(id: String, pw: String){
-        if(id.isEmpty()){
+    private fun signIn(id: String, pw: String) {
+        if (id.isEmpty()) {
             Toast.makeText(this, "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show()
             return
         }
-        if(pw.isEmpty()){
+        if (pw.isEmpty()) {
             Toast.makeText(this, "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show()
             return
         }
-        val userDB : UserDB = Room.databaseBuilder(this, UserDB::class.java, "user2-db").allowMainThreadQueries().build()
+        val userDB: UserDB =
+            Room.databaseBuilder(this, UserDB::class.java, "user2-db").allowMainThreadQueries()
+                .build()
         val user = userDB.userDao().getUser(id, pw)
 
         Log.d("user2-db", "$user")
 
-        if (user === null){
+        if (user === null) {
             Toast.makeText(this, "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show()
-        }else{
+        } else {
             user.let {
-                val spf : SharedPreferences = getSharedPreferences("memoapp2", MODE_PRIVATE)
+                val spf: SharedPreferences = getSharedPreferences("memoapp2", MODE_PRIVATE)
                 val editor = spf.edit()
                 val token = user.idx
 
@@ -73,7 +75,7 @@ class SignInActivity : BaseActivity() {
         startActivity(intent)
     }
 
-    private fun startMainActivity(){
+    private fun startMainActivity() {
         val intent = Intent(this@SignInActivity, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
